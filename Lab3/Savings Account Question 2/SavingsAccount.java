@@ -2,7 +2,7 @@ import java.text.DecimalFormat;
 
 public class SavingsAccount {
 	final DecimalFormat decimal = new DecimalFormat("#.00");
-	static int uniqueNumber = 1;
+	static int uniqueNumber = 0;
 	private double savingBalance;
 	static double annualInterestRate = 0.04;
 

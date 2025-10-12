@@ -9,7 +9,7 @@ public class BankCustomer {
 			throw new IllegalArgumentException("Enter a valid name");
 		}
 		this.name = name;
-		if (name.isEmpty() || name == null) {
+		if (address.isEmpty() || address == null) {
 			throw new IllegalArgumentException("Enter a valid address");
 		}
 		this.address = address;

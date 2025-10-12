@@ -2,12 +2,14 @@ import java.text.DecimalFormat;
 
 public class SavingsAccount {
 	final DecimalFormat decimal = new DecimalFormat("#.00");
-	static int uniqueNumber = 0;
+	private int uniqueNumber;
 	private double savingBalance;
 	static double annualInterestRate = 0.04;
+	static int uniqueNumberCount = 1;
 
 	public SavingsAccount() {
-		uniqueNumber++;
+		this.uniqueNumber = uniqueNumberCount;
+		uniqueNumberCount++;
 	}
 
 	public SavingsAccount(double savingBalance) {
@@ -15,7 +17,8 @@ public class SavingsAccount {
 			throw new IllegalArgumentException("Enter a valid number");
 		}
 		this.savingBalance = savingBalance;
-		uniqueNumber++;
+		this.uniqueNumber = uniqueNumberCount;
+		uniqueNumberCount++;
 	}
 
 	public void calculateMonthlyInterest() {
@@ -32,4 +35,9 @@ public class SavingsAccount {
 		annualInterestRate = 0.05;
 	}
 
+	@Override
+	public String toString() {
+		return "[Account number: " + uniqueNumber
+				+ ", Balance: " + getSavingsBalance() + "]";
+	}
 }

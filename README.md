@@ -7,3 +7,4 @@ Lab Work
 ## 13/oct/2025 Added Lab4: Address class is finished, the rest of the objects need work
 Something I just noticed is that I have, for example (street.isEmpty() || street == null), what I really should have is null value being checked first, before the isEmpty() method, and then have the null pointer exception. this will be fixed soon 
 ## 14/oct/2025 Lab 4 finished
+## 26/oct/2025 Lab 5 uploaded

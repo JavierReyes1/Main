@@ -5,7 +5,7 @@ public class Teacher extends Person{
 
 	public Teacher(String name, String address){
 		super(name, address);
-		numCourses = 0;
+		this.numCourses = 0;
 		this.courses = new String[2];
 	}
 	public boolean addCourse(String course){
@@ -23,6 +23,7 @@ public class Teacher extends Person{
 		for(int i = 0; i < courses.length ; i++){
 			if(courses[i].equalsIgnoreCase(course)){
 				 courses[i] = " ";
+					numCourses --;
 				 isRemoved = true;
 			}
 		}

@@ -1,4 +1,4 @@
-public abstract class Animal{
+public abstract class Animal{ //Animal class cannot be instantiated i.e Animal animal = new Animal(); this won't compile
 	private String name;
 	private String type;
 

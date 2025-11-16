@@ -8,3 +8,5 @@ Lab Work
 Something I just noticed is that I have, for example (street.isEmpty() || street == null), what I really should have is null value being checked first, before the isEmpty() method, and then have the null pointer exception. this will be fixed soon 
 ## 14/oct/2025 Lab 4 finished
 ## 26/oct/2025 Lab 5 uploaded
+## Lab 6 uploaded
+## 16/nov/2025 Lab 7 uploaded

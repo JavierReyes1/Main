@@ -8,6 +8,7 @@ public class Driver
   		Rectangle	rectangle = new Rectangle("Rectangle One", "Yellow", 15.0, 20.0);
   		Cylinder	cylinder = new Cylinder("Cylinder One", "Green", 6, 8);
   		Sphere		sphere = new Sphere("Sphere One", "Blue", 77);
+		Triangle	triangle = new Triangle("Triangle one", "Black", 12, 18);
   		
   		//print them using references of the objects type
   		System.out.println("\n---Using circle reference" + circle.toString());
@@ -31,6 +32,10 @@ public class Driver
   		System.out.println("\n---Using shape superclass reference for a rectangle " + shape.toString());
   		System.out.println("Rectangle area = " + shape.area()); //polymorphic call using superclass reference
   		
+  		shape = triangle;
+  		System.out.println("\n---Using shape superclass reference for a triangle " + shape.toString());
+  		System.out.println("Triangle area = " + shape.area()); //polymorphic call using superclass reference
+  		
   		shape = cylinder;
   		System.out.println("\n---Using shape superclass reference for a cylinder " + shape.toString());
   		System.out.println("Cylinder area = " + shape.area());  //polymorphic call using superclass reference
@@ -51,3 +56,4 @@ public class Driver
   		System.out.println("Cylinder volume = " + threeDShape.volume());  //polymorphic call using superclass reference
   	}
 }
+

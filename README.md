@@ -10,3 +10,5 @@ Something I just noticed is that I have, for example (street.isEmpty() || street
 ## 26/oct/2025 Lab 5 uploaded
 ## Lab 6 uploaded
 ## 16/nov/2025 Lab 7 uploaded
+## 23/nov/2025 Lab 8 uploaded
+.git files have been added as well, I have started learning how to use git in cli using ssh, basic commands like: pull, commit and push

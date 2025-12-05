@@ -10,19 +10,29 @@ public class TestHash
 						}
 				return hash;
 			}
+	public static int hashFunction(int asciiName)
+			{
+				return asciiName % 20;
+			}
+
 
 	public static void main(String[]args)
 	{
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter name: ");
-		String name = sc.nextLine();
-		for(int i = 0; i < name.length(); i++)
+		String name = " ";
+		while(!name.equals("n"))
 				{
-					char character = name.charAt(i);
-					int hash = character;
-					System.out.println("Ascii letter '" + character + "' is: " + hash);
+					System.out.println("Enter name: ");
+					name = sc.nextLine();
+					for(int i = 0; i < name.length(); i++)
+							{
+								char character = name.charAt(i);
+								int hash = character;
+								System.out.println("Ascii letter '" + character + "' is: " + hash);
+							}
+					System.out.println("Ascii total: " + getAscii(name));
+					System.out.println("Index after hash function: " +  hashFunction(getAscii(name)));
 				}
-		System.out.println(getAscii(name));
 	}
 
 }
